@@ -15,7 +15,7 @@ int main(void){
     int digit;
     digit = f.divide_counter(a);
 
-    cout << digit << endl << endl;
+    //cout << digit << endl << endl;
 
     int divided[digit];
     f.divide(a, digit, divided);
@@ -23,7 +23,7 @@ int main(void){
     cout << endl;
 
     for(int i=0; i<digit; i++){
-        cout <<  divided[i] << "\t" << i << endl;
+        //cout <<  divided[i] << "\t" << i << endl;
     }
 
     cout << endl;
@@ -35,9 +35,9 @@ int main(void){
     int ans[d];
     f.sqrt(divided, d, digit, ans);
 
-    for(int ii=0; ii<d; ii++){
-        cout << ans[ii];
-    }
+//    for(int ii=0; ii<d; ii++){
+//        cout << ans[ii];
+//    }
 
     cout << endl;
 
