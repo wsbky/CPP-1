@@ -14,5 +14,5 @@ clean:
 	rm -f *.o sqrt
 
 all-clean:
-	rm -rv ../first
+	rm -rv ../0.10/
 	echo Thank you trying out sqrt
