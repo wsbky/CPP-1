@@ -22,7 +22,7 @@ void CSqrt::divide(int a, int digit, int *divided){
 
     //2桁ごとの格納
     int i;
-    
+
     for(i=digit-1;i>=0;i--){
         divided[i] = a % 100;
         a /= 100;
@@ -41,7 +41,7 @@ void CSqrt::sqrt(int *factorial,int digit,int digit2, int *ans){
     }
     for(ii=digit-digit2;ii<digit;ii++){
         originals[ii] = 0;
-        cout << "digit:\t" << digit;
+        //cout << "digit:\t" << digit;
 
         int o;
         int p;
@@ -70,11 +70,11 @@ void CSqrt::sqrt(int *factorial,int digit,int digit2, int *ans){
                 mem = o + p;
                 mem = (mem * 10 + l) * l;
 
-                cout << "mem:\t" << mem << endl << "o:\t" << o << endl << "p:\t" << p << endl;
-                cout << "l:\t" << l << endl;
+                //cout << "mem:\t" << mem << endl << "o:\t" << o << endl << "p:\t" << p << endl;
+                //cout << "l:\t" << l << endl;
             }
 
-            cout << "l : " << l << endl;
+            //cout << "l : " << l << endl;
 
             if(l!=0){
                 o = mem / l;
@@ -86,6 +86,6 @@ void CSqrt::sqrt(int *factorial,int digit,int digit2, int *ans){
     int iii;
     for(iii=0;iii<digit;iii++){
         ans[iii] = originals[iii];
-        cout << ans[iii];
+        //cout << ans[iii];
     }
 }
